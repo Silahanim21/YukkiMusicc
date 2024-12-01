@@ -347,14 +347,13 @@ async def start_message_private(client, message):
             pass
             
     else:
-        caption = f"""➻ нᴇʏ</b>, {mention} ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ !
+        caption = f"""➻ merhaba</b>, {mention} nasılsın !
+ben @{bot.me.username} 
 
-● ɪ ᴀᴍ @{bot.me.username} ʙᴏᴛ.
-
-● ᴘʏᴛʜᴏɴ ➥</b> 3.10.11
-● ᴘʏʀᴏɢʀᴀᴍ ➥</b> 2.0.106
-● ᴘʏ-ᴛɢᴄᴀʟʟs ➥</b> 0.9.7
-❖ ᴛʜɪs ɪs ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ʙᴏᴛ, ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴠᴄ."""
+● python ➥</b> 3.10.11
+● pytgcals ➥</b> 2.0.106
+●  labirent ➥</b> 0.9.7
+❖ ben telegramın en gelişmiş müzik botuyum"""."""
         buttons = InlineKeyboardMarkup(
             [
                 [
@@ -365,11 +364,11 @@ async def start_message_private(client, message):
                 ],
                 [
             InlineKeyboardButton(text="💅Kurucu💅", url="https://t.me/kizilkarii"),
-            InlineKeyboardButton(text="destek", url="https://t.me/HEROKUBIN_01"),
+            InlineKeyboardButton(text="🥀destek🥀", url="https://t.me/HEROKUBIN_01"),
                 ],
                 [
                     InlineKeyboardButton(
-                        text="Yarım komutlar",
+                        text="🤖Yarım komutlar🤖",
                         callback_data="open_command_list",
                     )
                 ],
@@ -775,24 +774,24 @@ async def stream_logger(
             except Exception:
                 requested_by = user.title
             if position:
-                caption = f""" ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ ᴀᴛ
+                caption = f""" ✅ sıraya eklendi
                  `#{position}`
 
-🥀 ᴛɪᴛʟᴇ {title}
-🐬 ᴅᴜʀᴀᴛɪᴏɴ {duration}
-🦋 ꜱᴛʀᴇᴀᴍ ᴛʏᴘᴇ {stream_type}
-🌺 ᴄʜᴀᴛ ɴᴀᴍᴇ {chat_name}
-🌼 ᴄʜᴀᴛ ʟɪɴᴋ {chat_link}
-👾 ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ {requested_by}"""
+🥀 bilgi {title}
+🐬 dakika {duration}
+🦋 akış {stream_type}
+🌺 grup ismi {chat_name}
+🌼 grup link {chat_link}
+👾 talep eden {requested_by}"""
             else:
-                caption = f""" ꜱᴛᴀʀᴛᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ ᴏɴ ᴠᴄ
+                caption = f""" ⚡ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼Ş𝙇𝘼𝘿𝙄
 
-🥀 ᴛɪᴛʟᴇ {title}
-🐬 ᴅᴜʀᴀᴛɪᴏɴ {duration}
-🦋 ꜱᴛʀᴇᴀᴍ ᴛʏᴘᴇ {stream_type}
-🌺 ᴄʜᴀᴛ ɴᴀᴍᴇ {chat_name}
-🌼 ᴄʜᴀᴛ ʟɪɴᴋ {chat_link}
-👾 ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ {requested_by}"""
+🥀 𝘽𝙄𝙇𝙂𝙄 {title}
+🐬 𝘿𝘼𝙆𝙄𝙆𝘼 {duration}
+🦋 𝘼𝙆𝙄𝙎 𝙏𝙐𝙍𝙐 {stream_type}
+🌺 𝙂𝙍𝙐𝙋 𝙄𝙎𝙈𝙄 {chat_name}
+🌼 𝙜𝙧𝙪𝙥 𝙡𝙞𝙣𝙠 {chat_link}
+👾 𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣 {requested_by}"""
             try:
                 await bot.send_photo(LOG_GROUP_ID, photo=thumbnail, caption=caption)
             except Exception:
@@ -846,17 +845,17 @@ async def change_stream(chat_id):
 
     await call.play(chat_id, stream_media, config=call_config)
     await add_active_media_chat(chat_id, stream_type)
-    caption = f""" ꜱᴛᴀʀᴛᴇᴅ ꜱᴛʀᴇᴀᴍɪɴɢ ᴏɴ ᴠᴄ
+    caption = f""" ⚡ 𝙔𝘼𝙔𝙄𝙉 𝘽𝘼Ş𝙇𝘼𝘿𝙄
 
-🥀 ᴛɪᴛʟᴇ {title}
-🐬 ᴅᴜʀᴀᴛɪᴏɴ {duration}
-🦋 ꜱᴛʀᴇᴀᴍ ᴛʏᴘᴇ {stream_type}
-👾 ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ {requested_by}"""
+🥀 𝘽𝙄𝙇𝙂𝙄 {title}
+🐬 𝘿𝘼𝙆𝙄𝙆𝘼 {duration}
+🦋 𝘼𝙆𝙄𝙎 𝙏𝙐𝙍𝙐 {stream_type}
+👾 𝙩𝙖𝙡𝙚𝙥 𝙚𝙙𝙚𝙣 {requested_by}"""
     buttons = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="🗑️ ᴄʟᴏꜱᴇ",
+                    text="🗑️ 𝙈𝙀𝙉𝙐̈𝙔𝙐̈ 𝙆𝘼𝙋𝘼𝙏",
                     callback_data="force_close",
                 )
             ],
@@ -957,7 +956,7 @@ async def stream_audio_or_video(client, message):
                 ]
             )
             return await aux.edit_text(
-                "🥀 ɢɪᴠᴇ ᴍᴇ ꜱᴏᴍᴇ Qᴜᴇʀʏ ᴛᴏ\nᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴏʀ ᴠɪᴅᴇᴏ❗...\n\nℹ️ ᴇxᴀᴍᴘʟᴇꜱ:\n≽ Audio: `/play satisfya`\n≽ Video: `/vplay satisfya`",
+                "🥀       ᴍᴇ ꜱᴏᴍᴇ Qᴜᴇʀʏ ᴛᴏ\nᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴏʀ ᴠɪᴅᴇᴏ❗...\n\nℹ️ ᴇxᴀᴍᴘʟᴇꜱ:\n≽ Audio: `/play satisfya`\n≽ Video: `/vplay satisfya`",
                 reply_markup=buttons,
             )
         query = message.text.split(None, 1)[1]
