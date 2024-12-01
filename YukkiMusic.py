@@ -359,17 +359,17 @@ async def start_message_private(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ ❖",
+                        text="❖ Beni grubuna ekle  ❖",
                         url=f"https://t.me/{bot.me.username}?startgroup=true",
                     )
                 ],
                 [
-            InlineKeyboardButton(text="❍ᴡɴᴇꝛ", url="https://t.me/II_BAD_BABY_II"),
-            InlineKeyboardButton(text="ᴜᴘᴅᴧᴛᴇ", url="https://t.me/HEROKUBIN_01"),
+            InlineKeyboardButton(text="Kurucu", url="https://t.me/II_BAD_BABY_II"),
+            InlineKeyboardButton(text="destek", url="https://t.me/HEROKUBIN_01"),
                 ],
                 [
                     InlineKeyboardButton(
-                        text="ꃅᴏᴡ ᴛᴏ ᴜꜱᴇ ❖",
+                        text="Yarım komutlar",
                         callback_data="open_command_list",
                     )
                 ],
@@ -405,14 +405,14 @@ async def start_message_private(client, message):
             pass
             
     else:
-        caption = f"""➻ ʜᴇʟʟᴏ, {mention}
+        caption = f"""merhaba, {mention}
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ ➥."""
+komtlar bunlardır."""
         buttons = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ꃅᴏᴡ ᴛᴏ ᴜꜱᴇ ❖",
+                        text="Yardım Komutlar",
                         callback_data="open_command_list",
                     )
                 ],
