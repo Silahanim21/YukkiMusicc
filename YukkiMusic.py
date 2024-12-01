@@ -439,7 +439,7 @@ komtlar bunlardır."""
 
 @bot.on_callback_query(rgx("open_command_list"))
 async def open_command_list_alert(client, query):
-    caption = """💫 𝐨𝐲𝐧𝐚𝐭 𝐤𝐨𝐦𝐮𝐭𝐥𝐚𝐫 ❤️
+    caption = """ 𝐨𝐲𝐧𝐚𝐭 𝐤𝐨𝐦𝐮𝐭𝐥𝐚𝐫 
 /oynat 𝐬̧𝐚𝐫𝐤𝛊 𝐨𝐲𝐧𝐚𝐭𝛊𝐫 .
 /vplay 𝐯𝐢𝐝𝐞𝐨 𝐬̧𝐚𝐫𝐤𝛊 𝐨𝐲𝐧𝐚𝐭𝛊𝐫.
 
