@@ -364,7 +364,7 @@ async def start_message_private(client, message):
                     )
                 ],
                 [
-            InlineKeyboardButton(text="Kurucu", url="https://t.me/II_BAD_BABY_II"),
+            InlineKeyboardButton(text="💅Kurucu💅", url="https://t.me/kizilkarii"),
             InlineKeyboardButton(text="destek", url="https://t.me/HEROKUBIN_01"),
                 ],
                 [
@@ -440,23 +440,22 @@ komtlar bunlardır."""
 
 @bot.on_callback_query(rgx("open_command_list"))
 async def open_command_list_alert(client, query):
-    caption = """💫 ᴀʟʟ ᴍᴇᴍʙᴇʀꜱ ᴄᴀɴ ᴜꜱ ❤️
-/play ♢ ꜱᴛʀᴇᴀᴍ ᴏɴʟʏ ᴀᴜᴅɪᴏ ᴏɴ ᴠᴄ.
-/vplay ♢ ꜱᴛʀᴇᴀᴍ ᴀᴜᴅɪᴏ ᴡɪᴛʜ ᴠɪᴅᴇᴏ.
+    caption = """💫 𝐨𝐲𝐧𝐚𝐭 𝐤𝐨𝐦𝐮𝐭𝐥𝐚𝐫 ❤️
+/oynat 𝐬̧𝐚𝐫𝐤𝛊 𝐨𝐲𝐧𝐚𝐭𝛊𝐫 .
+/vplay 𝐯𝐢𝐝𝐞𝐨 𝐬̧𝐚𝐫𝐤𝛊 𝐨𝐲𝐧𝐚𝐭𝛊𝐫.
 
-👾 ᴏɴʟʏ ꜰᴏʀ ᴄʜᴀᴛ ᴀᴅᴍɪɴꜱ:
-/pause ♢ ᴘᴀᴜꜱᴇ ʀᴜɴɴɪɴɢ ꜱᴛʀᴇᴀᴍ.
-/resume ♢ ʀᴇꜱᴜᴍᴇ ᴘᴀᴜꜱᴇᴅ ꜱᴛʀᴇᴀᴍ.
-/skip ♢ ꜱᴋɪᴘ ᴄᴜʀʀᴇɴᴛ ꜱᴛʀᴇᴀᴍ ᴛᴏ ɴᴇxᴛ.
-/end ♢ ꜱᴛᴏᴘ ᴄᴜʀʀᴇɴᴛ ʀᴜɴɴɪɴɢ ꜱᴛʀᴇᴀᴍ.
+👾 𝐚𝐝𝐦𝐢𝐧 𝐤𝐨𝐦𝐮𝐭𝐥𝐚𝐫:
+/pause ♢ 𝐬̧𝐚𝐫𝐤𝛊𝐲𝛊 𝐝𝐮𝐫𝐝𝐮𝐫𝐮𝐫.
+/resume ♢ 𝐬̧𝐚𝐫𝐤𝛊𝐲𝛊 𝐝𝐞𝐯𝐚𝐦 𝐞𝐭𝐭𝐢𝐫𝐢𝐫.
+/skip ♢ 𝐚𝐤𝛊𝐬̧𝛊 𝐚𝐭𝐥𝐚𝐫.
+/end ♢ 𝐚𝐤𝛊𝐬̧𝛊 𝐬𝐨𝐧𝐥𝐚𝐧𝐝𝛊𝐫𝛊𝐫.
 
-ɴᴏᴛᴇ: ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅꜱ ᴡɪʟʟ ᴡᴏʀᴋ
-ᴏɴʟʏ ɪɴ ᴄʜᴀɴɴᴇʟꜱ/ɢʀᴏᴜᴘꜱ."""
+bu komutlar yanlızca grupta kullanılır. """
     buttons = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="🔙 Back",
+                    text="🔙 geri",
                     callback_data="back_to_home",
                 )
             ],
@@ -472,25 +471,25 @@ async def open_command_list_alert(client, query):
 @bot.on_callback_query(rgx("back_to_home"))
 async def back_to_home_menu(client, query):
     mention = query.from_user.mention
-    caption = f"""➻ нᴇʏ</b>, {mention} ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ !
+    caption = f"""➻ merhaba</b>, {mention} nasılsın!
 
-● ɪ ᴀᴍ @{bot.me.username} ʙᴏᴛ.
+● ben @{bot.me.username} .
 
-● ᴘʏᴛʜᴏɴ ➥</b> 3.10.11
-● ᴘʏʀᴏɢʀᴀᴍ ➥</b> 2.0.106
-● ᴘʏ-ᴛɢᴄᴀʟʟs ➥</b> 0.9.7
-❖ ᴛʜɪs ɪs ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ʙᴏᴛ, ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴠᴄ"""
+● python ➥</b> 3.10.11
+● pytgcals ➥</b> 2.0.106
+●  labirent ➥</b> 0.9.7
+❖ ben telegramın en gelişmiş müzik botuyum"""
     buttons = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɢɪᴄ ❖",
+                    text="❖ beni grubuna ekle ❖",
                     url=f"https://t.me/{bot.me.username}?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="ꃅᴏᴡ ᴛᴏ ᴜꜱᴇ ❖",
+                    text="yardım komutlarım ❖",
                     callback_data="open_command_list",
                 )
             ],
@@ -951,7 +950,7 @@ async def stream_audio_or_video(client, message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🗑️ ᴄʟᴏꜱᴇ",
+                            text="🗑️ kapat",
                             callback_data="force_close",
                         )
                     ],
@@ -1024,7 +1023,7 @@ async def stream_audio_or_video(client, message):
         [
             [
                 InlineKeyboardButton(
-                    text="🗑️ ᴄʟᴏꜱᴇ",
+                    text="🗑️ kapat",
                     callback_data="force_close",
                 )
             ],
@@ -1192,7 +1191,7 @@ async def stream_audio_or_video(client, message):
             return
 
 
-@bot.on_message(cdx(["pause", "vpause"]) & ~pyrofl.private)
+@bot.on_message(cdx(["dur", "vpause"]) & ~pyrofl.private)
 async def pause_running_stream_on_vc(client, message):
     chat_id = message.chat.id
     try:
@@ -1219,7 +1218,7 @@ async def pause_running_stream_on_vc(client, message):
             return
 
 
-@bot.on_message(cdx(["resume", "vresume"]) & ~pyrofl.private)
+@bot.on_message(cdx(["devam", "vresume"]) & ~pyrofl.private)
 async def resume_paused_stream_on_vc(client, message):
     chat_id = message.chat.id
     try:
@@ -1246,7 +1245,7 @@ async def resume_paused_stream_on_vc(client, message):
             return
 
 
-@bot.on_message(cdx(["skip", "vskip"]) & ~pyrofl.private)
+@bot.on_message(cdx(["atla", "vskip"]) & ~pyrofl.private)
 async def skip_and_change_stream(client, message):
     chat_id = message.chat.id
     try:
@@ -1256,7 +1255,7 @@ async def skip_and_change_stream(client, message):
     try:
         call_status = await get_call_status(chat_id)
         if call_status == "IDLE" or call_status == "NOTHING":
-            return await bot.send_message(chat_id, "ɴᴏᴛʜɪɴɢ ꜱᴛʀᴇᴀᴍɪɴɢ❗...")
+            return await bot.send_message(chat_id, "ɴᴏᴛʜɪɴɢ ꜱᴛʀᴇᴀᴍɪɴ❗...")
         elif call_status == "PLAYING" or call_status == "PAUSED":
             stickers = [
                 "🌹",
@@ -1288,7 +1287,7 @@ async def skip_and_change_stream(client, message):
             return
 
 
-@bot.on_message(cdx(["end", "vend"]) & ~pyrofl.private)
+@bot.on_message(cdx(["son", "vend"]) & ~pyrofl.private)
 async def stop_stream_and_leave_vc(client, message):
     chat_id = message.chat.id
     try:
@@ -1298,12 +1297,12 @@ async def stop_stream_and_leave_vc(client, message):
     try:
         call_status = await get_call_status(chat_id)
         if call_status == "NOTHING":
-            return await message.reply_text("ɴᴏᴛʜɪɴɢ ꜱᴛʀᴇᴀᴍɪɴɢ❗")
+            return await message.reply_text("Akış kapandı ❗")
         elif call_status == "IDLE":
-            return await message.reply_text("✅ ꜱᴜᴄᴄᴇꜱꜰᴜʟʟʏ ʟᴇꜰᴛ ꜰʀᴏᴍ ᴠᴄ❗")
+            return await message.reply_text("✅ akış başarıyla durduruldu❗")
         elif call_status == "PLAYING" or call_status == "PAUSED":
             await close_stream(chat_id)
-            return await message.reply_text("❎ ꜱᴛᴏᴘᴘᴇᴅ ꜱᴛʀᴇᴀᴍ & ʟᴇꜰᴛ\nꜰʀᴏᴍ ᴠᴄ❗...")
+            return await message.reply_text("❎ akış & durduruldu❗...")
         else:
             return
     except Exception as e:
@@ -1333,8 +1332,8 @@ async def check_sping(client, message):
     start = datetime.now()
     end = datetime.now()
     ms = (end - start).microseconds / 1000
-    m = await message.reply_text("📍 ᴘɪɴɢ ᴘᴏɴɢ ᴘɪɴɢ 📌...!!")
-    await m.edit(f"📌 ᴘɪɴɢᴇᴅ...!!\nʟᴀᴛᴇɴᴄʏ: `{ms}` ms")
+    m = await message.reply_text("📍 ping alınıyor 📌...!!")
+    await m.edit(f"📌 ping...!!\naktif: `{ms}` ms")
 
 
 @bot.on_message(cdx(["repo", "repository"]) & ~pyrofl.bot)
@@ -1424,25 +1423,25 @@ async def update_repo_latest(client, message):
     return
 
 
-@bot.on_message(cdx(["stats"]) & ~pyrofl.private)
+@bot.on_message(cdx(["aktiflik"]) & ~pyrofl.private)
 async def check_bot_stats(client, message):
     try:
         await message.delete()
     except:
         pass
     photo = START_IMAGE_URL
-    caption = "**⏤͟͞ PLAYER STATS ༗**"
+    caption = "**⏤͟͞ oynatıldı aktiflik ༗**"
     buttons = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="🐬 ᴄʜᴇᴄᴋ ꜱᴛᴀᴛꜱ",
+                    text="🐬 aktiflik",
                     callback_data="check_stats",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🗑️ ᴄʟᴏꜱᴇ",
+                    text="🗑️ geri",
                     callback_data="force_close",
                 )
             ]
@@ -1470,15 +1469,15 @@ async def check_total_stats(client, query):
         video_chats = len(ACTIVE_VIDEO_CHATS)
         
         return await query.answer(
-            f"""⏱️ ʙᴏᴛ ʀᴜɴ ᴛɪᴍᴇ [Boot]
+            f"""⏱️ bot aktiflik [Boot]
 ☛ {uptime}
 
-🔴 ꜱᴇʀᴠᴇᴅ ᴄʜᴀᴛꜱ: {served_chats}
-🔵 ꜱᴇʀᴠᴇᴅ ᴄʜᴀᴛꜱ: {served_users}
+🔴  sohbetler grup : {served_chats}
+🔵 sohbetler kullanıcı: {served_users}
 
-🦋 ᴛᴏᴛᴀʟ ᴀᴄᴛɪᴠᴇ ᴄʜᴀᴛꜱ [{activ_chats}]
-✿⋟ ᴀᴜᴅɪᴏ ᴄʜᴀᴛꜱ: {audio_chats}
-✿⋟ ᴠɪᴅᴇᴏ ᴄʜᴀᴛꜱ: {video_chats}""",
+🦋 aktif gruplar[{activ_chats}]
+✿⋟ müzik gruplar: {audio_chats}
+✿⋟ video gruplar: {video_chats}""",
             show_alert=True
         )
     except Exception as e:
@@ -1508,7 +1507,7 @@ async def broadcast_message(client, message):
         if "-user" in query:
             query = query.replace("-user", "")
         if query == "":
-            return await message.reply_text("🥀 ᴘʟᴇᴀꜱᴇ ɢɪᴠᴇ ᴍᴇ ꜱᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ʙʀᴏᴀᴅᴄᴀꜱᴛ❗...")
+            return await message.reply_text("🥀 yayınlandı  ❗...")
     
     # Bot broadcast inside chats
     if "-nobot" not in message.text:
